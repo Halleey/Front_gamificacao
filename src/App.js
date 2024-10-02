@@ -1,23 +1,25 @@
-import logo from './logo.svg';
-import './App.css';
+import { Link } from 'react-router-dom';
+import styles from './App.module.css';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+    <div className={styles.App}>
+      <header className={styles["App-header"]}>
+        <h1>Sistema del Gatito mañoso</h1>
+        <div className={styles["header-buttons"]}>
+          <Link to={'/register'}>
+            <button>Registre-se</button>
+          </Link>
+          <button>Login</button>
+        </div>
       </header>
+
+      <p>Obrigado por usar nosso sistema</p>
+
+      <footer>
+        <p>Desenvolvido por Hallyson</p>
+        <p>Tel: 18996636287</p>
+      </footer>
     </div>
   );
 }

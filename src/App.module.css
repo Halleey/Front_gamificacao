@@ -1,0 +1,73 @@
+.App {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 20px;
+  background: linear-gradient(to bottom, #1a1a1a, #000000);
+  color: white;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.App-header {
+  width: 100%;
+  display: flex;
+  justify-content: space-between; 
+  align-items: center;
+  padding: 10px 20px;
+  position: relative;
+}
+
+h1 {
+  font-size: 2em;
+  margin: 20px 0;
+  text-align: left;
+}
+
+.header-buttons {
+  display: flex;
+  gap: 10px;
+}
+
+button {
+  padding: 10px 20px;
+  background-color: #6a09ac;
+  color: white;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  margin-bottom: 10px;
+}
+
+button:hover {
+  background-color: #9229f5;
+  box-shadow: 0 0 10px #ab3ee6;
+}
+
+
+select {
+  padding: 10px;
+  background-color: #6a09ac;
+  color: white;
+  border: 1px solid #ccc;
+  border-radius: 20px;
+  font-size: 16px;
+  transition: background-color 0.3s ease-in-out, border-color 0.3s ease-in-out;
+}
+
+select:focus {
+  background-color: #6b7986;
+  border-color: #7a0bad;
+}
+
+footer {
+  margin-top: auto;
+  padding: 10px;
+  background-color: #20232a;
+  color: white;
+  font-size: 0.9rem;
+  text-align: center;
+}
