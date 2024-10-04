@@ -10,7 +10,10 @@ function App() {
           <Link to={'/register'}>
             <button>Registre-se</button>
           </Link>
-          <button>Login</button>
+
+          <Link to = {'/login'}> 
+          <button>Login </button>
+          </Link>
         </div>
       </header>
 
